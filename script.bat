@@ -1,8 +1,9 @@
 @echo hello world!
-@echo This program will clone the file on current path
+@echo This program will clone the file on D path
 @pause
 @d:
 @dir
+@echo we will clone from github and add new path
 @pause
 @git clone https://github.com/LubosKuzma/AssemblyToolchains.git
 @setx "path" "D:D:\AssemblyToolchains\scripts;%path%"
