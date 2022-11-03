@@ -1,12 +1,15 @@
-@echo hello world!
-@echo This program will clone the file on D path
+@echo hello, welcome to use the script to install the AssemblyToolchains 
+@echo This program will clone the file on Temp files (you can use the %%temp%% in address bar to find it)
 @pause
-@d:
-@dir
-@echo we will clone from github and add new path
+@c:
+@cd %temp%
+@echo %cd%
+@pause
+@echo we will clone from github and add them in temp files
 @pause
 @git clone https://github.com/LubosKuzma/AssemblyToolchains.git
-@setx "path" "D:D:\AssemblyToolchains\scripts;%path%"
+@setx "path" "%temp%\AssemblyToolchains\scritps\arm_toolchain.sh;%path%"
+@setx "path" "%temp%\AssemblyToolchains\scritps\x86_toolchain.sh;%path%"
 @pause
 @cd AssemblyToolchains
 @cd scripts
